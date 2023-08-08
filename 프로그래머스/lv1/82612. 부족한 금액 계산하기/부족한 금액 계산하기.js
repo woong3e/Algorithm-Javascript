@@ -9,4 +9,5 @@ function solution(price, money, count) {
     }else if(result<0){
         return Math.abs(result);
     }
+    return result;
 }
