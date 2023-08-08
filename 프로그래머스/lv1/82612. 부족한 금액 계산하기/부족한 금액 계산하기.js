@@ -3,11 +3,6 @@ function solution(price, money, count) {
     for(let i=1;i<=count;i++){
         answer += price * i;
     }
-    let result = money - answer;
-    if(result >=0){
-        return 0;
-    }else if(result<0){
-        return Math.abs(result);
-    }
-    return result;
+    const result = money - answer;
+    return result >= 0 ? 0 : Math.abs(result);
 }
